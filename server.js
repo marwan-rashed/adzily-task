@@ -23,6 +23,6 @@ Mongoose
     .then(() => console.log('Connected to MongoDB Successfully.'))
     .catch((err) => console.log(err));
 
-app.listen(process.env.PORT, () => {
-    console.log(`App listening on port ${process.env.PORT} ...`);
+app.listen(process.env.PORT || PORT, () => {
+    console.log(`App listening on port ${process.env.PORT || PORT} ...`);
 });
