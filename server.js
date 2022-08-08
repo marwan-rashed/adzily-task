@@ -2,9 +2,10 @@ import express from 'express';
 import Mongoose from 'mongoose';
 import { PORT, databaseURL } from './config.js'
 import routes from './routes/index.js';
-
+import cors from 'cors'
 const app = express()
 
+app.use(cors())
 app.use(express.json());
 
 app.get(
