@@ -24,5 +24,5 @@ Mongoose
     .catch((err) => console.log(err));
 
 app.listen(process.env.PORT, () => {
-    console.log(`App listening on port ${PORT} ...`);
+    console.log(`App listening on port ${process.env.PORT} ...`);
 });
